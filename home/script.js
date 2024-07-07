@@ -1,5 +1,5 @@
 document.getElementById('agendar').onclick = function () {
-    window.location.replace('http://127.0.0.1:5500/inicio/index.html')
+    window.location.replace('https://emersondevlucas.github.io/app-barber-mobile/inicio/')
 }
 
 document.getElementById('localização').onclick = function () {

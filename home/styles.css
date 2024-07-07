@@ -53,9 +53,11 @@
     main article button {
         width: 150px;
         height: 40px;
+        font-size: 17px;
         border: none;
         border-radius: 10px;
-        background-color: var(--success-color);
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
     }
 
 }
