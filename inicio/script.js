@@ -15,11 +15,17 @@ function startSlideshow() {
 
 document.addEventListener('DOMContentLoaded', startSlideshow);
 
-function configurarEventosBarbeiros () {
+document.getElementById('barbeiro-selecione').onclick = function () {
+    let barbeiroOpcoes = document.getElementById('barbeiro-opcoes');
     let barbeiroSelecione = document.getElementById('barbeiro-selecione');
     let barbeiro1 = document.getElementById('barbeiro1');
     let barbeiro2 = document.getElementById('barbeiro2');
-    let barbeiroOpcoes = document.getElementById('barbeiro-opcoes');
+
+    if (barbeiroOpcoes.style.display === 'flex') {
+        barbeiroOpcoes.style.display = 'none';
+    } else {
+        barbeiroOpcoes.style.display = 'flex';
+    }
 
     barbeiro1.onclick = function () {
         let parent = barbeiroSelecione.parentElement; 
@@ -34,18 +40,7 @@ function configurarEventosBarbeiros () {
         barbeiroOpcoes.style.display = 'none'; 
         configurarEventosBarbeiros(); 
     };
-}
-
-document.getElementById('select').onclick = function () {
-    let barbeiroOpcoes = document.getElementById('barbeiro-opcoes');
-
-    if (barbeiroOpcoes.style.display === 'flex') {
-        barbeiroOpcoes.style.display = 'none';
-    } else {
-        barbeiroOpcoes.style.display = 'flex';
-    }
-
-    configurarEventosBarbeiros();
+    
 };
 
 
