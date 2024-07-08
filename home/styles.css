@@ -23,9 +23,6 @@
     body {
         color: var(--text-color);
         background-color: var(--secondary-color);
-        background-image: url('fundo.jpg');
-        background-repeat: no-repeat;
-        background-position: -600px;
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-style: normal;
