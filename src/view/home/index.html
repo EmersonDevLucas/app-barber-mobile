@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link rel="icon" href="" />
-    <title>Appbarber</title>
-  </head>
-  <body>
-
-    <main>
-        <article>
-            <img src="default.png" alt="logo">
-        </article>
-        <article>
-            <button id="agendar">Agendar</button>
-            <button id="localização">Localização</button>
-        </article>
-    </main>
-
-    <script src="script.js"></script>
-  </body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/view/css/home.css">
+    <title>Escolha do Barbeiro</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Escolha seu Barbeiro</h1>
+            <p>Selecione um profissional para o seu atendimento</p>
+        </header>
+        <section class="barbeiros">
+            <div class="barbeiro-card">
+                <img src="../assets/images/barbeiro1.jpg" alt="Barbeiro 1">
+                <h2>João Silva</h2>
+                <p>Especialista em cortes modernos</p>
+                <button>Selecionar</button>
+            </div>
+            <div class="barbeiro-card">
+                <img src="../assets/images/barbeiro2.jpg" alt="Barbeiro 2">
+                <h2>Carlos Santos</h2>
+                <p>Perito em barba e alinhamento</p>
+                <button>Selecionar</button>
+            </div>
+            <div class="barbeiro-card">
+                <img src="../assets/images/barbeiro3.jpg" alt="Barbeiro 3">
+                <h2>Rafael Souza</h2>
+                <p>Cortes clássicos e estilizados</p>
+                <button>Selecionar</button>
+            </div>
+        </section>
+    </div>
+</body>
 </html>

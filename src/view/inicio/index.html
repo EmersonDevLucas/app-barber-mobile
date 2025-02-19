@@ -1,155 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/view/css/inicio.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link rel="icon" href="" />
-    <title>Appbarber</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <section>
-          <figure>
-            <img src="/src/view/public/default.png" alt="logo" class="logo" id="logo"/>
-          </figure>
-
-          <ul>
-            <li><i class="fa-solid fa-bars" id="menu"></i></li>
-          </ul>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - App Barber Mobile</title>
+    <link rel="stylesheet" href="/src/view/css/inicio.css">
+</head>
+<body>
+    <div class="home-container">
+        <header>
+            <h1>Bem-vindo ao App Barber</h1>
+            <p>Escolha um serviço para continuar</p>
+        </header>
+        <section class="services">
+            <div class="service-card">
+                <h2>Corte de Cabelo</h2>
+                <p>Escolha um barbeiro e agende seu horário.</p>
+                <button>Selecionar</button>
+            </div>
+            <div class="service-card">
+                <h2>Barba</h2>
+                <p>Modelagem, alinhamento e cuidados especiais.</p>
+                <button>Selecionar</button>
+            </div>
+            <div class="service-card">
+                <h2>Pacote Completo</h2>
+                <p>Corte e barba com desconto especial.</p>
+                <button>Selecionar</button>
+            </div>
         </section>
-
-        <section>
-          <input type="search" placeholder="Busque aqui..." id="busca" />
-        </section>
-      </nav>
-    </header>
-
-    <main>
-      <article class="banner">
-        <figure>
-          <img src="/src/view/public/1.png" alt="banner" class="banner" id="banner1" />
-          <img src="/src/view/public/2.png" alt="banner" class="banner" id="banner2" />
-          <img src="/src/view/public/3.png" alt="banner" class="banner" id="banner3" />
-        </figure>
-      </article>
-
-      <article class="barbeiro-selecione" id="barbeiro-selecione">
-        <section class="nome">
-          <p>Selecione seu barbeiro</p>
-        </section>
-      </article>
-
-      <article class="barbeiro-opcoes" id="barbeiro-opcoes">
-        <article class="barbeiro1" id="barbeiro1">
-          <section class="nome">
-            <p>Barbeiro 1</p>
-          </section>
-
-          <figure class="perfil">
-            <img src="barbeirouser.png" alt="barbeiro" />
-          </figure>
-        </article>
-
-        <article class="barbeiro2" id="barbeiro2">
-          <section class="nome">
-            <p>Barbeiro 2</p>
-          </section>
-
-          <figure class="perfil">
-            <img src="barbeirouser.png" alt="barbeiro" />
-          </figure>
-        </article>
-      </article>
-
-      <ul class="serviços">
-        <li class="serviço">
-          <figure>
-          <img src="barbeiro 1.png" alt="img">
-          </figure>
-          Navalhado
-          <button class="button-agendar">Agendar</button>
-        </li>
-        <li class="serviço">
-          <figure>
-          <img src="barbeiro 1.png" alt="img">
-          </figure>
-          Disfarçado
-          <button class="button-agendar">Agendar</button>
-        </li>
-        <li class="serviço">
-          <figure>
-          <img src="barbeiro 1.png" alt="img">
-          </figure>
-          Tesoura
-          <button class="button-agendar">Agendar</button>
-        </li>
-        <li class="serviço">
-          <figure>
-          <img src="barbeiro 1.png" alt="img">
-          </figure>
-          Barba
-          <button class="button-agendar">Agendar</button>
-        </li>
-        <li class="serviço">
-          <figure>
-          <img src="barbeiro 1.png" alt="img">
-          </figure>
-          Sobrancelha
-          <button class="button-agendar">Agendar</button>
-        </li>
-        <li class="serviço">
-          <figure>
-          <img src="barbeiro 1.png" alt="img">
-          </figure>
-          Maquina
-          <button class="button-agendar">Agendar</button>
-        </li>
-        <li class="serviço">
-          <figure>
-          <img src="barbeiro 1.png" alt="img">
-          </figure>
-          Alisamento
-          <button class="button-agendar">Agendar</button>
-        </li>
-        <li class="serviço">
-          <figure>
-          <img src="barbeiro 1.png" alt="img">
-          </figure>
-          Reflexo
-          <button class="button-agendar">Agendar</button>
-        </li>
-        <li class="serviço">
-          <figure>
-          <img src="barbeiro 1.png" alt="img">
-          </figure>
-          Cachos
-          <button class="button-agendar">Agendar</button>
-        </li>
-        <li class="serviço">
-          <figure>
-          <img src="barbeiro 1.png" alt="img">
-          </figure>
-          Hidratação
-          <button class="button-agendar">Agendar</button>
-        </li>
-        <li class="serviço">
-          <figure>
-          <img src="barbeiro 1.png" alt="img">
-          </figure>
-          Pintura
-          <button class="button-agendar">Agendar</button>
-        </li>
-      </ul>
-    </main>
-
-    <footer></footer>
-
-    <script src="script.js"></script>
-  </body>
+    </div>
+</body>
 </html>

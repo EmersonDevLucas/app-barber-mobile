@@ -1,66 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link rel="icon" href="" />
-    <title>Appbarber</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <section>
-          <figure>
-            <img src="default.png" alt="logo" class="logo" id="logo"/>
-          </figure>
-
-          <ul>
-            <li><i class="fa-solid fa-bars" id="menu"></i></li>
-          </ul>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="/src/view/css/agenda.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Agende seu Horário</h1>
+            <p>Escolha a data e o horário desejado</p>
+        </header>
+        <section class="calendar-container">
+            <label for="date">Selecione a Data:</label>
+            <input type="date" id="date">
         </section>
-      </nav>
-    </header>
-
-    <main>
-      <article class="titulo">
-        <h1>Datas disponíveis</h1>
-      </article>
-
-      <article class="datas">
-        <section class="ano">
-          <i class="fa-solid fa-arrow-left" id="esquerda"></i>
-          <div class="info-ano" id="info-ano"></div>
-          <i class="fa-solid fa-arrow-right" id="direita"></i>
+        <section class="time-slots">
+            <div class="time-slot">09:00</div>
+            <div class="time-slot">10:00</div>
+            <div class="time-slot">11:00</div>
+            <div class="time-slot">14:00</div>
+            <div class="time-slot">15:00</div>
+            <div class="time-slot">16:00</div>
         </section>
-        <section class="mes">
-          <i class="fa-solid fa-arrow-left" id="esquerda"></i>
-          <div class="info-mes" id="info-mes"></div>
-          <i class="fa-solid fa-arrow-right" id="direita"></i>
-        </section>
-        <section class="dia">
-          <i class="fa-solid fa-arrow-left" id="esquerda"></i>
-          <div class="info-dia" id="info-dia"></div>
-          <i class="fa-solid fa-arrow-right" id="direita"></i>
-        </section>
-        <section class="hora">
-          <i class="fa-solid fa-arrow-left" id="esquerda"></i>
-          <div class="info-hora" id="info-hora"></div>
-          <i class="fa-solid fa-arrow-right" id="direita"></i>
-        </section>
-      </article>
-      
-      <button>Agendar</button>
-    </main>
-
-    <footer>
-      
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+        <button id="confirm-btn">Confirmar Agendamento</button>
+    </div>
+    <script>
+        document.querySelectorAll('.time-slot').forEach(slot => {
+            slot.addEventListener('click', function() {
+                document.querySelectorAll('.time-slot').forEach(s => s.classList.remove('selected'));
+                this.classList.add('selected');
+            });
+        });
+    </script>
+</body>
 </html>
